@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/css/style.css">
+	<meta charset="utf-8" />
+	<title>Add Printer</title>
+</head>
+
+<body>
+	<h1>Add Printer</h1>
+    <form action="/add" method="POST" onsubmit="return confirm('Please ensure all details are correct before proceeding');">
+        <label for="nickname">Nickname</label><input type="text" name="nickname"><br>
+        <label for="brand">Brand</label><input type="text" name="brand"><br>
+        <label for="model">Model</label><input type="text" name="model"><br>
+        <label for="trayMaxVolume">Tray Max Volume</label><input type="number" name="trayMaxVolume" step="0.5" min="1" max="10"><br>
+        <label for="backgroundinfo">Background Information</label><br><textarea name="backgroundinfo" width="30" height="100"></textarea><br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+    </form>
+
+	
+	<a href="/"><button type="text">&#9664; HOME</button></a>
+</body>
+
+<script>
+    
+</script>
+
+</html>
